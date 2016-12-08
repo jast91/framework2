@@ -52,7 +52,7 @@ class Authorization{
 		session_destroy(); 
 		echo"<script type='text/javascript'>
 		     alert('Ha salido correctamente');
-		    window.location='http://localhost/framework/users/login';
+		    window.location='http://localhost/moneytracking/users/login';
 		    </script>";
 	}
 }

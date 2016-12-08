@@ -3,7 +3,13 @@
 <head>
 <meta charset="UTF-8">
 
-	<title>Framework Básico</title>
+	<title>Framework Básico 
+		<?php 
+			if (!empty($title)) {
+				echo "»".$title
+			}
+		?>		
+	</title>
 
 	<link rel="stylesheet" 
 	href ="<?php echo $layoutParams["route_css"]; ?>/style.css" >

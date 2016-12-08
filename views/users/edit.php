@@ -8,8 +8,8 @@
 		<input type="text" name="username" value = "<?php echo $user["username"]; ?>">
 	</p>
 	<p>
-		<label for="Newpassword">Password</label>
-		<input type="password" name="newPassword">
+		<label for="NewPassword">Password</label>
+		<input type="password" name="NewPassword">
 	</p>
 		<p>
 		<label for="type_id">Type</label>

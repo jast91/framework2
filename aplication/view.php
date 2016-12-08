@@ -6,11 +6,21 @@ class view
 	private $_view;
 	private $_layout = DEFAULT_LAYOUT;
 	private $viewsVars;
+	public $helper = array("Html");
 
 	public function __construct(Request $petition){
 		$this->_controller = $petition->getController();
 		$this->_method = $petition->getMethod();
 		$this->_view = $this->_method;
+		$this->loadHelper(); 
+	}
+
+	public function loadHelper(){
+		if (!empty($this->helper)) {
+			foreach ($this->helper as $key => $value) {
+				$this->$value = new $value;
+			}
+		}
 	}
 
 	public function setLayout($layouts){
