@@ -1,11 +1,21 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Inicio de Sesión</title>
-		<link rel="stylesheet" href ="<?php echo $layoutParams["route_css"]; ?>/style.css">
+	<meta charset="utf-8">	
+	<title>Inicio de sesión</title>
+<link rel="stylesheet" 
+	href ="<?php echo $layoutParams["route_css"]; ?>/loginn.css" >
+	
 </head>
 <body>
-	<div class="login">
+ <div class="body"></div>
+<div class="grad"></div>
+		<div class="header">
+			<div><span>moneytracking</span></div>
+		</div>
+		
 
+<div class="loginn">
+	
 

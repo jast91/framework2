@@ -1,11 +1,20 @@
 <?php 
+/**
+ * 
+ * class_exists(usuario->userController)
+ */
 class UsersController extends AppController { 
 
-
+/**
+ * function_exists(contructor)
+ * 
+ */
 	public function __construct(){
 		parent::__construct();
 	}
-
+/**
+ *function_exists(index) 
+ */
 	
 	public function index(){
 		//opcion 1
@@ -25,6 +34,11 @@ class UsersController extends AppController {
 
 	}
 
+	/**
+	 * 
+	 * function_exists( gregar->add)
+	 */
+
 	public function add(){
 
 		if ($_SESSION["type_name"]=="Administradores") {
@@ -42,7 +56,11 @@ class UsersController extends AppController {
 			$this->redirect(array("controller"=>"users"));
 			}
 		}
-
+	/**
+	 * 
+	 * @param type $id 
+	 * function_exists(editar-> edit)
+	 */
 	public function edit($id){
 		if ($_POST) {
 			if (!empty($_POST["NewPassword"])) {
@@ -71,6 +89,11 @@ class UsersController extends AppController {
 		$this->set("types", $this->users->find("types"));
 		
 	}
+	/**
+	 * function_exists(eliminar->delete)
+	 * @param type $id 
+	 * 
+	 */
 
 	public function delete($id){
 		$options = "users.id=".$id;
@@ -80,10 +103,16 @@ class UsersController extends AppController {
 
 	}
 
+	/**
+	 * function_exists(login)
+	 * login( username, password)
+	 */
+
 	public function login(){
 		$this->_view->setLayout("login");
 
 		if($_POST){
+
 			$pass = new Password();
 			$filter = new Validations();
 			$auth = new Authorization();
@@ -112,7 +141,9 @@ class UsersController extends AppController {
 			}
 		}
 	}
-
+	/**
+	 *logout salir del login	
+	 */
 	public function logout(){
 		$auth = new Authorization();
 		$auth->logout();

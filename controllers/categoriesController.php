@@ -1,9 +1,26 @@
-<?php 
+<?php
+/**
+ * @author Troncoso
+ * 
+ * class(Categories)
+ 
+ */
+ 
 class categoriesController extends AppController {
+	/**
+	 * function(Contructor)
+	 * 
+	 * */
 
 	public function __construct(){
 		parent::__construct();
 	}
+
+	/**
+	 * function(funcion->index)
+	 * @
+	 */
+	 * /
 
 	public function index(){
 		//opcion 1
@@ -19,7 +36,14 @@ class categoriesController extends AppController {
 				)
 			);
 	}
-
+	/**
+	 * 
+	 * rename_function( agregar-> add)
+	 * @return type
+	 * direc
+	 * redirect(users)
+	 */
+	 
 
 	public function add(){
 
@@ -38,7 +62,9 @@ class categoriesController extends AppController {
 			$this->redirect(array("controller"=>"users"));
 			}
 		}
-
+	/* 
+	 *function( edit-> editar Categorias) 
+	 */
 	public function edit($id){
 		if ($_POST) {
 			
@@ -63,6 +89,12 @@ class categoriesController extends AppController {
 		$this->set("categories", $this->categories->find("categories"));
 		
 	}
+
+	/**
+	 * Description
+	 * @param type $id 
+	 * @return ->categories
+	 */
 
 	public function delete($id){
 		$options = "categories.id=".$id;

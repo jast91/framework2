@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
-	<title>Framework Básico 
+	<title>moneytracking
 		<?php 
 			if (!empty($title)) {
 				echo "»".$title

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-       <title>Framework Básico 
+       <title>moneytracking 
             <?php 
                 if (!empty($title)) {
                     echo "»".$title;
@@ -45,6 +45,7 @@
         <li class="active"><a href="<?php echo APP_URL; ?>/users">Usuarios<span class="sr-only">(current)</span></a></li>
         <li class="active"><a href="<?php echo APP_URL; ?>/types">Tipos de Usuario<span class="sr-only">(current)</span></a></li>
         <li class="active"><a href="<?php echo APP_URL; ?>/categories">Categorias<span class="sr-only">(current)</span></a></li>
+       
         <li><a href="<?php echo APP_URL."/users/logout"; ?>">Logout</a></li>
        
       </ul>
